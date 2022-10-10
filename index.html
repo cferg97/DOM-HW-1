@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phones</title>
+</head>
+<body>
+    <style>
+        table, th, td {
+            border: 2px solid 
+        }
+        #footer {
+            position:absolute;
+            bottom:0;
+        }
+    </style>
+    <!-- Q1 --> 
+
+    <h1>Mobile Phone Shop</h1>
+    
+    <!-- Q2 -->
+
+    <table>
+        <thead>
+            <th colspan="4">Top 5 Best Selling</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Price</td>
+                <td>Image</td>
+            </tr>
+            <tr>
+                <td><a href = "https://amzn.eu/d/ecc6RmJ">Samsung Galaxy S22 Ultra</a></td>
+                <td>It is a very good phone</td>
+                <td>£914</td>
+                <td><image src="./images/S22.PNG" height="200px"></td>
+            </tr>
+            <tr>
+                <td><a href = "https://amzn.eu/d/45g36iG">Apple iPhone 13</a></td>
+                <td>It's an iPhone</td>
+                <td>£750</td>
+                <td><img src="./images/iphone.PNG" height="200px"></td>
+            </tr>
+            <tr>
+                <td><a href = "https://amzn.eu/d/agQEpNu">Samsung Galaxy Z Fold4</a></td>
+                <td>It's a foldy phone</td>
+                <td>£2000</td>
+                <td><img src="./images/fold.PNG" height="200px"></td>
+            </tr>
+            <tr>
+                <td><a href = "https://amzn.eu/d/9oxNwGe">Google Pixel 6</a></td>
+                <td>It's a Google phone</td>
+                <td>£450</td>
+                <td><img src="./images/pixel.PNG" height="200px"></td>
+            </tr>
+            <tr>
+                <td><a href = "https://amzn.eu/d/fyqV75j">OnePlus 10T</a></td>
+                <td>It's a mediocre phone</td>
+                <td>£729</td>
+                <td><img src="./images/oneplus.PNG" height=200px></td>
+        </tbody>
+    </table>
+    <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+        <script type="text/javascript">
+        function ValidateForm(frm) {
+        if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+        if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+        if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+        if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+        return true; }
+        </script>
+        <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+        <tr> <td>
+        <label for="Name">Name*:</label>
+        </td> <td>
+        <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+        </td> </tr> <tr> <td>
+        <label for="PhoneNumber">Phone number:</label>
+        </td> <td>
+        <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+        </td> </tr> <tr> <td>
+        <label for="FromEmailAddress">Email address*:</label>
+        </td> <td>
+        <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+        </td> </tr> <tr> <td>
+        <label for="Comments">Comments*:</label>
+        </td> <td>
+        <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+        </td> </tr> <tr> <td>
+        * - required fields
+        </td> <td>
+        <input name="skip_Submit" type="submit" value="Submit" />
+        </td> </tr>
+        </table>
+        </form>
+    <footer>
+        (c)Mobile Phone Shop 2022
+        Head Office: 123 Fake Street, London
+    </footer>
+</body>
+</html>
