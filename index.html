@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Phones</title>
+
 </head>
 <body>
     <style>
@@ -15,13 +16,28 @@
             position:absolute;
             bottom:0;
         }
+
+        .huge-text {
+            font-size: 3em
+        }
+
+        .hidden {
+            display:none
+        }
     </style>
     <!-- Q1 --> 
-
-    <h1>Mobile Phone Shop</h1>
-    
+    <div id="header">
+        <h1 id="heading">Mobile Phone Shop</h1>
+        <button onclick="changeH1()">CHANGE TEXT</button>
+        <button onclick="changeBG()">CHANGE BACKGROUND COLOUR</button>
+        <button onclick="changeFooter()">CHANGE FOOTER TEXT</button>
+        <button onclick="addLinkClass()">CHANGE LINK SIZE/ADD CLASS</button>
+        <button onclick="imageVisability()">Toggle Images</button>
+        <button onclick="getRandomColor()">Toggle Colours</button>
+    </div>
     <!-- Q2 -->
 
+    <div id="table">
     <table>
         <thead>
             <th colspan="4">Top 5 Best Selling</th>
@@ -64,6 +80,10 @@
                 <td><img src="./images/oneplus.PNG" height=200px></td>
         </tbody>
     </table>
+    </div>
+
+
+    <div id="form">
     <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
         <script type="text/javascript">
         function ValidateForm(frm) {
@@ -97,9 +117,12 @@
         </td> </tr>
         </table>
         </form>
+    </div>
+
     <footer>
         (c)Mobile Phone Shop 2022
         Head Office: 123 Fake Street, London
     </footer>
+    <script src="hw.js"></script>
 </body>
 </html>
